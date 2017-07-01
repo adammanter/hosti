@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Hosti 3.0</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>HOSTI | Get more reservations now</title>
+
+  <meta property="og:title" content="Hosti - Get more reservations now" />
+
+
+  
+  
+  <script type="text/javascript">
+    function isElementInViewport($elem) {
+      // Get the scroll position of the page.
+      var scrollElem = "body";
+      var viewportTop = $(scrollElem).scrollTop();
+      var viewportBottom = viewportTop + window.innerHeight;
+    
+      // Get the position of the element on the page.
+      var elemTop = Math.round($elem.offset().top);
+      var elemBottom = elemTop + $elem.height();
+    
+      return elemTop < viewportBottom && elemBottom > viewportTop;
+    }
+    
+    // Check if it's time to start the animation.
+    function checkAnimation() {
+      var $elem = $(".bot");
+      if ($elem.hasClass("start")) return;
+      if (isElementInViewport($elem)) {
+        $elem.addClass("start");
+      }
+    }
+    
+    function checkAnimation2() {
+      var $elem = $(".bubble-tree");
+      if ($elem.hasClass("start")) return;
+      if (isElementInViewport($elem)) {
+        $elem.addClass("start");
+      }
+    }
+    
+    // Capture scroll events
+    $(window).scroll(function() {
+      checkAnimation();
+      checkAnimation2();
+    });
+  </script>
+  
+</head>
+
+<body>
+
+
+  <div class="topbar">
+    <div class="container">
+      <div class="header-logo">
+          <a href="#" class="lockup2">Hosti</a>
+        <a href="#signup" class="header-btn" title="Get Started for FREE" tabindex="2">Sign-Up</a>
+
+
+        <div id="signup" class="dialog dialog--flow dialog--signup" tabindex="70" data-swiftype-index="false">
+          <a href="#close" class="dialog-close dialog-close-background"></a>
+          <div class="dialog-container">
+            <a href="#close" class="dialog-close icon icon--x" tabindex="80">x</a>
+
+
+            <div class="dialog-header">
+              <h2>Recieve early access</h2>
+            </div>
+
+            <div class="dialog-content">
+
+
+              <p class="p--center">Use whichever email you like most.</p>
+
+
+              <form id="signup-form-modal-signup" class="signupForm signupForm--modal-signup  " action="https://api.formbucket.com/f/buk_JgYDChMnrpnK1ba84IUun0w0" method="post" target="_blank ">
+
+                <label for="signup-email-modal-signup">Email Address</label>
+                <input id="signup-email-modal-signup" class="input--email" tabindex="72" placeholder="name@company.com" name="email" type="email" autocomplete="off">
+
+
+                <button id="signup-submit-modal-signup" class="" tabindex="73" onclick="submit" title="Sign Up">Sign Up</button>
+
+                <div class="error-message-container">
+                  <div id="signup-email-modal-signup-not-valid" class="error-message" style="display:none">
+                    <div class="icon icon--alert"></div>
+                    Oops, looks like that’s not a valid email.
+                  </div>
+                </div>
+              </form>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!--<a href="#" class="lockup">Pricing</a>
+
+
+          <a href="#" class="lockup">Features</a>-->
+
+
+    </div>
+
+
+  </div>
+  <div class="section hero">
+
+
+    <div class="container">
+
+
+      <h1>Messaging for<br> <span class="type-it"></span></h1>
+
+
+      <a href="#signup" class="center outline-btn" title="Get Started for FREE" tabindex="2">Get Early Access</a>
+
+
+      <div id="signup" class="dialog dialog--flow dialog--signup" tabindex="70" data-swiftype-index="false">
+        <a href="#close" class="dialog-close dialog-close-background"></a>
+        <div class="dialog-container">
+          <a href="#close" class="dialog-close icon icon--x" tabindex="80">x</a>
+
+
+          <div class="dialog-header">
+            <h2>Sign Up</h2>
+          </div>
+
+          <div class="dialog-content">
+
+
+            <p class="p--center">Use whichever email you like most.</p>
+
+
+            <form id="signup-form-modal-signup" class="signupForm signupForm--modal-signup  " action="https://api.formbucket.com/f/buk_JgYDChMnrpnK1ba84IUun0w0" method="post" target="_blank ">
+
+              <label for="signup-email-modal-signup">Email Address</label>
+              <input id="signup-email-modal-signup" class="input--email" tabindex="72" placeholder="name@company.com" name="email" type="email" autocomplete="off">
+
+
+              <button id="signup-submit-modal-signup" class="" tabindex="73" onclick="submit" title="Sign Up">Sign Up</button>
+
+              <div class="error-message-container">
+                <div id="signup-email-modal-signup-not-valid" class="error-message" style="display:none">
+                  <div class="icon icon--alert"></div>
+                  Oops, looks like that’s not a valid email.
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="subheader">Hosti is the first (and best) automatic messaging solution for the hospitality industry. Use AI to get more reservations, increase customer satisfaction, & communicate on any platform.
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="section progress">
+    <div class="container">
+      <div class="text">
+        <h2>Conversational Chatbot</h2>
+        <h3 class="left">Hosti is a chatbot that goes everywhere your customers go</h3>
+        <p>We make it as easy as possible for your guests to book reservations, get more information, leave feedback, and communicate with your staff.</p>
+        <p>Use Hosti on your website, Facebook, through email, and over text message. We make it as simple as possible to fully integrate Hosti into your current platforms.
+        </p>
+        
+
+
+        <!--<p>Hosti is a lot of things. Hosti is your reservations manager, your extra hostess during a rush, an assisstant for those days when every thing seems to go wrong, and most importantly you're biggest advocate.</p>
+            <p>We accomplish this in a number of ways, each focused on solving a different problem you're having. We make it easier to talk with your costomers, and a breeze to give them what they need. It's really that simple. Take a look how Hosti can
+              help you out today!</p>
+
+
+<p>We take the back and forth out of the equation. Cut the time it takes to book reservations down to seconds.</p>
+          <p>Secure all the information you need to manage customer reservations and keep them coming back!</p>-->
+      </div>
+      <span class="phone-img ">
+      
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="319" height="608" viewBox="0 0 319 608">
+  <defs>
+    <style>
+      .a {
+        isolation: isolate;
+      }
+
+      .b {
+        fill: #f2f2f2;
+      }
+
+      .c {
+        opacity: 0.5;
+        mix-blend-mode: multiply;
+      }
+
+      .d {
+        fill: #F7F7F7;
+      }
+
+      .e, .f {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .e {
+        stroke-width: 0.85px;
+        stroke: url(#a);
+      }
+
+      .f {
+        stroke-width: 1.75px;
+        stroke: url(#b);
+      }
+    </style>
+    <linearGradient id="a" x1="14.92" y1="548.63" x2="304.32" y2="47.37" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.52" stop-color="#8a8a8a"/>
+      <stop offset="1" stop-color="#e8e7e7"/>
+    </linearGradient>
+    <linearGradient id="b" x1="149.73" y1="554.82" x2="170.27" y2="519.23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.52" stop-color="#b5b5b5"/>
+      <stop offset="1" stop-color="#e8e7e7"/>
+    </linearGradient>
+  </defs>
+  <title>phone</title>
+  <g class="a">
+    <g>
+      <rect class="b" x="285.46" y="129.36" width="6.32" height="39" rx="2" ry="2"/>
+      <rect class="b" x="29.02" y="90.36" width="4.27" height="26.33" rx="2" ry="2"/>
+      <rect class="b" x="28.21" y="130.69" width="5.89" height="36.33" rx="2" ry="2"/>
+      <rect class="b" x="28.21" y="181.02" width="5.89" height="36.33" rx="2" ry="2"/>
+      <rect class="d" x="30.82" y="24.98" width="257.6" height="546.05" rx="32.3" ry="32.3"/>
+      <rect class="e" x="30.82" y="24.98" width="257.6" height="546.05" rx="32.3" ry="32.3"/>
+      <rect class="b" x="142.08" y="57.36" width="38.67" height="8.67" rx="4" ry="4"/>
+      <circle class="b" cx="123.41" cy="61.69" r="4.33"/>
+      <circle class="f" cx="160" cy="537.02" r="19.8"/>
+    </g>
+    <image width="750" height="1334" transform="translate(42.13 89.02) scale(0.31)" xlink:href="https://www.jivochat.com/assets/images/compressed/sdk/sdk-animation.gif"/>
+  </g>
+</svg>
+      </span>
+
+    </div>
+  </div>
+
+
+  <div class="section midpanel">
+
+
+    <div class="container">
+
+
+      <h1>Automate everything.</h1>
+      <div class="subheader">Integrate Hosti and let us handle everything. Use everywhere your guests are. From Facebook & Messenger, to Real-time communication through text message, Hosti will be your best employee in no time!
+      </div>
+
+        
+        
+        <div id="DIV_1">
+	<div id="DIV_2">
+		<header id="HEADER_3">
+			<img src="https://www.algolia.com/static_assets/images/svg/pillar-icon-saas-61345726.svg" id="IMG_4" alt='' />
+			<h3 id="H3_5">
+				More Reservations
+			</h3>
+		</header>
+		<article id="ARTICLE_6">
+			<p id="P_7">
+				Deploy Hosti where your guests spend time online, we'll reach them and get more peolpe in the door
+			</p>
+		</article>
+	</div>
+	<div id="DIV_8">
+		<header id="HEADER_9">
+			<img src="https://www.algolia.com/static_assets/images/svg/pillar-icon-ecommerce-2173a6cf.svg" id="IMG_10" alt='' />
+			<h3 id="H3_11">
+				Instant Feedback
+			</h3>
+		</header>
+		<article id="ARTICLE_12">
+			<p id="P_13">
+				Whether good or bad, feedback is critical. Stop a fire before it starts, or give your staff a pat on the back. 
+			</p>
+		</article>
+	</div>
+	<div id="DIV_14">
+		<header id="HEADER_15">
+			<img src="https://www.algolia.com/static_assets/images/svg/pillar-icon-media-f21bfb37.svg" id="IMG_16" alt='' />
+			<h3 id="H3_17">
+				Drive Sales
+			</h3>
+		</header>
+		<article id="ARTICLE_18">
+			<p id="P_19">
+				Let everyone know about specials, events, menu items, anything! Hosti works tirelessly to increase drive sales.
+			</p>
+		</article>
+	</div>
+</div>
+     <!-- <div class="bot-wrapper">
+        <div class="col-3">
+          <span class="bot bot-1 start"></span>
+          <h3>Book Reservations</h3>
+          <p>It's as easy as sending a text message to handle everything related to reservation management with Hosti.</p>
+        </div>
+
+        <div class="col-3">
+          <span class="bot bot-1 start"></span>
+          <h3>Book Reservations</h3>
+          <p>It's as easy as sending a text message to handle everything related to reservation management with Hosti.</p>
+        </div>
+
+        <div class="col-3">
+          <span class="bot bot-1 start"></span>
+          <h3>Book Reservations</h3>
+          <p>It's as easy as sending a text message to handle everything related to reservation management with Hosti.</p>
+        </div>
+      </div>
+
+      <!--<div class="subheader">You could double your resevations, and increase customer satisfaction using Hosti
+
+        </div>-->
+
+
+    </div>
+
+  </div>
+  <!--  <div class="section bots">
+        <div class="container center">
+          <h2 class="center">How can Hosti help me?</h2>
+          <h3>Hosti is for everyone. Whether you're focused on getting more covers, or refining the guest experience</h3>
+
+          <div class="bot-wrapper">
+            <div class="col-3">
+              <span class="bot bot-1 start"></span>
+              <h3>Book Reservations</h3>
+              <p>It's as easy as sending a text message to handle everything related to reservation management with Hosti.</p>
+              <!--<p>Your patrons can book a reservation using whatever method they want. Text, on your website, email, over Facebook Messenger, the list goes on. If you can send a message through it, you can book a reservation. </p>
+            </div>
+            <div class="col-3">
+              <span class="bot bot-2 start"></span>
+              <h3>Guage Customer Satisfaction</h3>
+              <p>As in any business, guest & client relations are #1. Allow your guests the ability to contact you with any praise or problems before they take it to social media.</p>
+              <p>Everyone makes mistakes, a soup may have shown up cold, a manager might have been rushed, a server may have been in the weeds. Things happen. The last thing you want is a dissatisfied customer going online and bashing you. Give them a way to let you know someting went wrong, and have a chance to fix it before it becomes sensationalized.</p>
+            </div>
+            <div class="col-3">
+              <span class="bot bot-3 start"></span>
+              <h3>Grow with us</h3>
+              <p>Over a billion people rely on messaging for almost everything today. Using our push notification features you can target more people, faster than ever</p>
+              <p>Hosti's main goal is to increase every aspect of your venue. Whether it's helping advertise mroe, increasing customer satisfaction, or making it just a little easier to get a table. Hosti has your back!</p>
+
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+
+  <div class="section tree">
+    <div class="container">
+      <div class="image-container">
+        <span class="bubble-tree start"></span>
+      </div>
+      <div class="text">
+        <h2>Powered by A.I.</h2>
+        <p>Hosti chatbots are powered by artificial intelligence and react differently to thousands of possible answers. With each conversation your host becomes smarter and interacts with your guests in a more focused manner.</p>
+        <p>Our list of skills is constantly growing with each and every different Hosti exchange.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section prefooter">
+
+
+    <div class="container">
+
+
+      <h1>Hosti</h1>
+      <div class="subheader">Communicate with your guests like never before.
+      </div>
+
+
+      <a href="#signup" class="center outline-btn" title="Get Started for FREE" tabindex="2">Get Early Access</a>
+
+
+      <div id="signup" class="dialog dialog--flow dialog--signup" tabindex="70" data-swiftype-index="false">
+        <a href="#close" class="dialog-close dialog-close-background"></a>
+        <div class="dialog-container">
+          <a href="#close" class="dialog-close icon icon--x" tabindex="80">x</a>
+
+
+          <div class="dialog-header">
+            <h2>Sign Up</h2>
+          </div>
+
+          <div class="dialog-content">
+
+
+            <p class="p--center">Use whichever email you like most.</p>
+
+
+            <form id="signup-form-modal-signup" class="signupForm signupForm--modal-signup  " action="https://api.formbucket.com/f/buk_JgYDChMnrpnK1ba84IUun0w0" method="post" target="_blank ">
+
+              <label for="signup-email-modal-signup">Email Address</label>
+              <input id="signup-email-modal-signup" class="input--email" tabindex="72" placeholder="name@company.com" name="email" type="email" autocomplete="off">
+
+
+              <button id="signup-submit-modal-signup" class="" tabindex="73" onclick="submit" title="Sign Up">Sign Up</button>
+
+              <div class="error-message-container">
+                <div id="signup-email-modal-signup-not-valid" class="error-message" style="display:none">
+                  <div class="icon icon--alert"></div>
+                  Oops, looks like that’s not a valid email.
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="container">
+        <div class="col-12 center">
+          <div>
+            <a href="instagram.com/" class="nav-link">
+              Instagram
+            </a>
+            <a href="medium.com/" class="nav-link">
+              Medium
+            </a>
+            <a href="#" class="nav-link">
+              Contact
+            </a>
+            <a href="#" class="nav-link">
+              TOS
+            </a>
+            <a href="#" class="nav-link">
+              Privacy
+            </a>
+          </div>
+
+          <div>
+            <span>
+              © 2017 Hosti.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typeit/4.3.0/typeit.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
